@@ -56,6 +56,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QR Reader\QRReader.cs" />
     <Compile Include="UserTypes\IUser.cs" />
     <Compile Include="UserTypes\Test.cs" />
     <Compile Include="UserTypes\User.cs" />
@@ -83,6 +84,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Party\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
