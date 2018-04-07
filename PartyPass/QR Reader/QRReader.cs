@@ -13,12 +13,19 @@ namespace PartyPass.QRReader
 
         public QRReader()
         {
-
+            ReadBarcodeFromImage("barcodes.png");
         }
 
         public void ReadBarcodeFromImage(string file)
         {
+            Scan = CSBarcodeScanner.ScanBarcode(file);
 
+            foreach (ScanResult s in Scan)
+            {
+                Console.WriteLine(s.BarcodeType.ToString() + ": " + s.BarcodeData);
+            }
+
+            Console.ReadKey();
         }
     }
 }
