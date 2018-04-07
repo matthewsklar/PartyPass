@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="CnetSDK.Barcode.Scanner.Trial">
       <HintPath>..\..\..\..\Downloads\CnetSDK.Barcode.Scanner.Trial\Lib\CnetSDK.Barcode.Scanner.Trial.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -57,7 +58,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QR Reader\QRReader.cs" />
-    <Compile Include="UserTypes\IUser.cs" />
+    <Compile Include="UserTypes\Attendee.cs" />
     <Compile Include="UserTypes\Test.cs" />
     <Compile Include="UserTypes\User.cs" />
     <EmbeddedResource Include="Form1.resx">
