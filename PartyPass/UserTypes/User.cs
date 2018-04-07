@@ -22,6 +22,11 @@ namespace PartyPass.UserTypes
             this.Type = Types.General;
             this.ID = "123456789";
         }
+        public User( Types T)
+        {
+            this.Type = T;
+            this.ID = "123456789";
+        }
         public User(String I, Types T)
         {
             this.Type = T;

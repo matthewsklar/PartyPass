@@ -57,9 +57,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QR Reader\QRReader.cs" />
     <Compile Include="UserTypes\Attendee.cs" />
-    <Compile Include="UserTypes\Test.cs" />
+    <Compile Include="UserTypes\Bartender.cs" />
+    <Compile Include="UserTypes\Bouncer.cs" />
     <Compile Include="UserTypes\User.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
