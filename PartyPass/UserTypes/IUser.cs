@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 namespace PartyPass.UserTypes
 {
     /**
+     * Deprecated
+     * 
      * Interface for all users of the application:
      * Bouncers
      * Bartenders
@@ -18,9 +20,6 @@ namespace PartyPass.UserTypes
          * Returns the ID of the User
          */
         String getID();
-        /**
-         * Returns the type of the User
-         */
-        String getType();
+        
     }
 }
