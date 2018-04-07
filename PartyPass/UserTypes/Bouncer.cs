@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace PartyPass.UserTypes
 {
-    class Test
+    class Bouncer : User
     {
-        static void Main()
+        public Bouncer() : base(Types.Bouncer)
         {
+
         }
+
     }
 }

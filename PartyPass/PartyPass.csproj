@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="CnetSDK.Barcode.Scanner.Trial">
       <HintPath>..\..\..\..\Downloads\CnetSDK.Barcode.Scanner.Trial\Lib\CnetSDK.Barcode.Scanner.Trial.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,11 +55,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Party\Party.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QR Reader\QRReader.cs" />
-    <Compile Include="UserTypes\IUser.cs" />
-    <Compile Include="UserTypes\Test.cs" />
+    <Compile Include="UserTypes\Attendee.cs" />
+    <Compile Include="UserTypes\Bartender.cs" />
+    <Compile Include="UserTypes\Bouncer.cs" />
     <Compile Include="UserTypes\User.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -84,9 +86,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
