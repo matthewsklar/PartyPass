@@ -49,6 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BartenderScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BartenderScreen.Designer.cs">
+      <DependentUpon>BartenderScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BouncerScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BouncerScreen.Designer.cs">
+      <DependentUpon>BouncerScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Party\" />
+    <Folder Include="UserConsole\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
