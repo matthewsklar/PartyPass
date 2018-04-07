@@ -11,36 +11,31 @@ namespace PartyPass.UserTypes
      * Version 1.0
      * Represents a User object
      */
-    public abstract class User
+    public class User
     {
         public enum Types { General, Bouncer, Bartender, Attendee };
-        private String ID = "123456789";
-        private Types type = Types.General;
-        private String QRCode;
-        /**
-         * Returns the ID of the User
-         */
-        public String GetID()
-        {
-            return ID;
-        }
-        /**
-         * Returns the type of the User
-         */
-        public Types GetUserType()
-        {
-            return type;
-        }
-        /**
-         * Return the QR Code
-         */
-         public String getQRCode()
-        {
-            return QRCode;
-        }
+        private String myID;
+        private Types myType;
 
-        public abstract void SetType();
-        public abstract void SetQRCode();
-
+        public User()
+        {
+            this.Type = Types.General;
+            this.ID = "123456789";
+        }
+        public User(String I, Types T)
+        {
+            this.Type = T;
+            this.ID = I;
+        }
+        public String ID
+        {
+            get { return myID; }
+            set { myID = value; }
+        }
+        public Types Type
+        {
+            get { return myType; }
+            set { myType = value; }
+        }
     }
 }
